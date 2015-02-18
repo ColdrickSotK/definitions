@@ -3,7 +3,7 @@ kind: stratum
 description: Qt5 Development Libraries and Tools
 build-depends:
 - morph: strata/tools.morph
-- morph: strata/x-generic.morph
+- morph: strata/x-wayland.morph
 chunks:
 - name: icu
   morph: strata/qt5-tools/icu.morph

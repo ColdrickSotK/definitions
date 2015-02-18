@@ -3,7 +3,7 @@ kind: stratum
 description: Qt4 Development Libraries and Tools
 build-depends:
 - morph: strata/tools.morph
-- morph: strata/x-generic.morph
+- morph: strata/x-wayland.morph
 - morph: strata/multimedia-gstreamer-0.10.morph
 chunks:
 - name: icu

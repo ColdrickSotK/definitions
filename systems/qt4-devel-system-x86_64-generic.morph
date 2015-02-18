@@ -22,8 +22,8 @@ strata:
   morph: strata/tools.morph
 - name: x-common
   morph: strata/x-common.morph
-- name: x-generic
-  morph: strata/x-generic.morph
+- name: x-wayland
+  morph: strata/x-wayland.morph
 - name: qt4-tools
   morph: strata/qt4-tools.morph
 - name: qt4-sdk

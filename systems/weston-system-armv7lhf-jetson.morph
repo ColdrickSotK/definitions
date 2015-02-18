@@ -37,8 +37,8 @@ strata:
   morph: strata/weston-common.morph
 - name: x-common
   morph: strata/x-common.morph
-- name: x-generic
-  morph: strata/x-generic.morph
+- name: x-wayland
+  morph: strata/x-wayland.morph
 - name: tools
   morph: strata/tools.morph
 configuration-extensions:

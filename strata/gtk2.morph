@@ -3,7 +3,7 @@ kind: stratum
 description: the gtk2 stratum
 build-depends:
 - morph: strata/gtk-deps.morph
-- morph: strata/x-generic.morph
+- morph: strata/x-wayland.morph
 chunks:
 - name: gtk+
   morph: strata/gtk2/gtk+.morph
