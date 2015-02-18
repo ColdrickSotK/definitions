@@ -3,7 +3,7 @@ kind: stratum
 description: Enlightenment Desktop and Window Manager
 build-depends:
 - morph: strata/tools.morph
-- morph: strata/x-generic.morph
+- morph: strata/x-wayland.morph
 - morph: strata/lua.morph
 - morph: strata/audio-bluetooth.morph
 - morph: strata/multimedia-gstreamer.morph

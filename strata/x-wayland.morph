@@ -1,0 +1,21 @@
+name: x-wayland
+kind: stratum
+build-depends:
+- morph: strata/foundation.morph
+- morph: strata/libdrm-common.morph
+- morph: strata/mesa-common.morph
+- morph: strata/x-common.morph
+- morph: strata/graphics-common.morph
+chunks:
+- name: libepoxy
+  repo: upstream:libepoxy
+  ref: 7422de5b4be7b19d789136b3bb5f932de42db27c
+  unpetrify-ref: v1.2
+  build-depends: []
+- name: xserver
+  morph: strata/x-wayland/xserver.morph
+  repo: upstream:xserver
+  ref: 4393c7f1ba6140a02232f04fbb434a80d663a99d
+  unpetrify-ref: xorg-server-1.16.2
+  build-depends:
+  - libepoxy

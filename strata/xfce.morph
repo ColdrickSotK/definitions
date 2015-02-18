@@ -3,7 +3,7 @@ kind: stratum
 description: xfce stratum
 build-depends:
 - morph: strata/gtk2.morph
-- morph: strata/x-generic.morph
+- morph: strata/x-wayland.morph
 chunks:
 - name: libcroco
   repo: upstream:libcroco
