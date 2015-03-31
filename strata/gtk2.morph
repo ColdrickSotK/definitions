@@ -8,5 +8,5 @@ chunks:
 - name: gtk+
   morph: strata/gtk2/gtk+.morph
   repo: upstream:gtk+
-  ref: fbf38d16bcc26630f0f721d266509f5bc292f606
+  ref: 308c6f0cd5f15ee62ee97522b35f26f331113cad
   unpetrify-ref: baserock/tlsa/2.24.25+automake115_fix

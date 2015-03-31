@@ -5,15 +5,24 @@ build-depends:
 - morph: strata/gtk2.morph
 - morph: strata/x-xorg.morph
 chunks:
+- name: gnome-common
+  repo: upstream:gnome-common
+  ref: d213283fcb5228d05eb2c796579f18240e8467e8
+  unpetrify-ref: 3.12.0
 - name: libcroco
   repo: upstream:libcroco
   ref: 611f624a6e15065792b41eb5ce14811293f3fb0a
   unpetrify-ref: baserock/morph
+  build-depends:
+  - gnome-common
 - name: librsvg
   morph: strata/xfce/librsvg.morph
   repo: upstream:librsvg
   ref: 61171ca59d02b58b7da1697ca1d924bff93e66cb
   unpetrify-ref: baserock/morph
+  build-depends:
+  - gnome-common
+  - libcroco
 - name: xfce-dev-tools
   repo: upstream:xfce/xfce4-dev-tools
   ref: 9244250ac0c15ba160688758c5dccf97f3f160ef
@@ -38,8 +47,8 @@ chunks:
 - name: libxfce4ui
   morph: strata/xfce/libxfce4ui.morph
   repo: upstream:xfce/libxfce4ui
-  ref: 7c37663eab9ddadc8b04559d8258a19f2a0b1a50
-  unpetrify-ref: libxfce4ui-4.11.1
+  ref: b9e6a57385ff6f0c15bbc637b76472211e3696b0
+  unpetrify-ref: libxfce4ui-4.11.2
   build-depends:
   - xfce-dev-tools
   - libxfce4util
@@ -47,10 +56,11 @@ chunks:
 - name: garcon
   morph: strata/xfce/garcon.morph
   repo: upstream:xfce/garcon
-  ref: febd4136365714556f6afbccf4302e8f4550e5d1
+  ref: 69ff09cf0a9ee3ff9518822614637dc2d4f89ce6
   unpetrify-ref: baserock/morph
   build-depends:
   - libxfce4util
+  - libxfce4ui
 - name: perl-uri
   repo: upstream:libwww-perl/uri
   ref: 3dd72ded7f043a4f6973781fe594722e2e95f491
@@ -69,6 +79,8 @@ chunks:
   repo: upstream:libwnck
   ref: 6792abcdf27aceba1012406d51606e84b065a526
   unpetrify-ref: baserock/xfce-build
+  build-depends:
+  - gnome-common
 - name: xfce4-panel
   morph: strata/xfce/xfce4-panel.morph
   repo: upstream:xfce/xfce4-panel
@@ -135,7 +147,7 @@ chunks:
 - name: xfwm4
   morph: strata/xfce/xfwm4.morph
   repo: upstream:xfce/xfwm4
-  ref: a960a8a8d7c8e52c57115154892edc7a1d425a7f
+  ref: 7666dc133d4227549bc68f2ef859bc34e82f1f91
   unpetrify-ref: baserock/tlsa/xfwm4-4.11.2_plus_fallback_theme
   build-depends:
   - exo
@@ -146,7 +158,7 @@ chunks:
 - name: xfce4-appfinder
   morph: strata/xfce/xfce4-appfinder.morph
   repo: upstream:xfce/xfce4-appfinder
-  ref: 5c069f13fde648913a59f022957b2c83b5764f39
+  ref: 6c2bc7a09dd6e85bb78913cdc8af2292a9361e04
   unpetrify-ref: baserock/morph
   build-depends:
   - exo

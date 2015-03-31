@@ -19,8 +19,12 @@ strata:
   morph: strata/connman-common.morph
 - name: audio-bluetooth
   morph: strata/audio-bluetooth.morph
+- name: mesa-common
+  morph: strata/mesa-common.morph
 - name: graphics-common
   morph: strata/graphics-common.morph
+- name: wayland-generic
+  morph: strata/wayland-generic.morph
 - name: x-common
   morph: strata/x-common.morph
 - name: multimedia-common
@@ -37,6 +41,8 @@ strata:
   morph: strata/gtk2.morph
 - name: tools
   morph: strata/tools.morph
+- name: devtools
+  morph: strata/devtools.morph
 - name: python-cliapp
   morph: strata/python-cliapp.morph
 - name: python-wsgi
