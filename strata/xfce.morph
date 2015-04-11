@@ -147,8 +147,8 @@ chunks:
 - name: xfwm4
   morph: strata/xfce/xfwm4.morph
   repo: upstream:xfce/xfwm4
-  ref: 7666dc133d4227549bc68f2ef859bc34e82f1f91
-  unpetrify-ref: xfwm4-4.11.3
+  ref: f5c1c74e1436deff7f16ef92c98097ac3baae290
+  unpetrify-ref: xfwm4-4.11.3_plus_fallback_theme
   build-depends:
   - exo
   - libxfce4util
